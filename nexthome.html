@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blurrr</title>
+    <link rel="icon" href="./homeasste/tanjiro.png">
+    <style>
+        video {
+           
+            width: 100%;
+            filter: blur(2px);
+        }
+        .para {
+            height: 15rem;
+            width: 30rem;
+            border: 20px inset black;
+            position: absolute;
+            left: 35%;
+            top: 40%;
+            border-top-left-radius: 70px ;
+            border-bottom-right-radius: 70px;
+            background-color: rgba(0, 0, 0 , 0.5);
+            opacity: 2;
+        }
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 40px;
+            color: white;
+        }  
+        p {
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+   <video src="./homeasste/glass pic.mp4"></video>
+   <div class="para"> 
+         <h1> helllo world</h1>
+         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque autem, reiciendis necessitatibus quaerat incidunt deserunt modi laboriosam rem corrupti reprehenderit a ad harum ratione, totam consectetur, doloribus laborum. Sint.</p>
+         <button> click me!</button>
+   </div>
+    <script> 
+        let btn = document.querySelector("button");
+
+        setTimeout ( () => {
+            btn.style.backgroundColor = "red";
+        }, 1000);
+
+        
+
+        btn.addEventListener("click", showMsg);
+         
+        function showMsg() {
+            let p = document.querySelector("p");
+            let h1 = document.querySelector("h1");
+            
+            p.style.color = "blue";
+            h1.style.color = "green";
+            
+         }
+       
+    </script>
+</body>
+</html>
